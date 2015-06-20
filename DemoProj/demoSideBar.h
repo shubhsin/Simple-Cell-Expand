@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  demoSideBar.h
 //  DemoProj
 //
 //  Created by Shubham Sorte on 19/06/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UITableView *myTableView;
-
+@interface demoSideBar : UITableView
 
 @end
-

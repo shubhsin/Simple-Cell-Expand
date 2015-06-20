@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A37ED02D1B3533CF0010092F /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37ED02C1B3533CF0010092F /* DemoTableViewCell.xib */; };
+		A37ED0301B3534430010092F /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A37ED02F1B3534430010092F /* DemoTableViewCell.m */; };
 		A3EF6C081B3453A90014D40E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF6C071B3453A90014D40E /* main.m */; };
 		A3EF6C0B1B3453A90014D40E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF6C0A1B3453A90014D40E /* AppDelegate.m */; };
 		A3EF6C0E1B3453A90014D40E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF6C0D1B3453A90014D40E /* ViewController.m */; };
@@ -14,6 +16,8 @@
 		A3EF6C131B3453A90014D40E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EF6C121B3453A90014D40E /* Images.xcassets */; };
 		A3EF6C161B3453A90014D40E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EF6C141B3453A90014D40E /* LaunchScreen.xib */; };
 		A3EF6C221B3453A90014D40E /* DemoProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF6C211B3453A90014D40E /* DemoProjTests.m */; };
+		A3EF6C2C1B3453ED0014D40E /* DemoTableSideBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EF6C2B1B3453ED0014D40E /* DemoTableSideBar.xib */; };
+		A3EF6C2F1B3454620014D40E /* demoSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF6C2E1B3454620014D40E /* demoSideBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A37ED02C1B3533CF0010092F /* DemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
+		A37ED02E1B3534430010092F /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		A37ED02F1B3534430010092F /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
 		A3EF6C021B3453A90014D40E /* DemoProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF6C061B3453A90014D40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3EF6C071B3453A90014D40E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,9 @@
 		A3EF6C1B1B3453A90014D40E /* DemoProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF6C201B3453A90014D40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3EF6C211B3453A90014D40E /* DemoProjTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoProjTests.m; sourceTree = "<group>"; };
+		A3EF6C2B1B3453ED0014D40E /* DemoTableSideBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTableSideBar.xib; sourceTree = "<group>"; };
+		A3EF6C2D1B3454620014D40E /* demoSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoSideBar.h; sourceTree = "<group>"; };
+		A3EF6C2E1B3454620014D40E /* demoSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demoSideBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +93,18 @@
 			children = (
 				A3EF6C091B3453A90014D40E /* AppDelegate.h */,
 				A3EF6C0A1B3453A90014D40E /* AppDelegate.m */,
+				A37ED02C1B3533CF0010092F /* DemoTableViewCell.xib */,
+				A37ED02E1B3534430010092F /* DemoTableViewCell.h */,
+				A37ED02F1B3534430010092F /* DemoTableViewCell.m */,
 				A3EF6C0C1B3453A90014D40E /* ViewController.h */,
 				A3EF6C0D1B3453A90014D40E /* ViewController.m */,
 				A3EF6C0F1B3453A90014D40E /* Main.storyboard */,
 				A3EF6C121B3453A90014D40E /* Images.xcassets */,
 				A3EF6C141B3453A90014D40E /* LaunchScreen.xib */,
 				A3EF6C051B3453A90014D40E /* Supporting Files */,
+				A3EF6C2B1B3453ED0014D40E /* DemoTableSideBar.xib */,
+				A3EF6C2D1B3454620014D40E /* demoSideBar.h */,
+				A3EF6C2E1B3454620014D40E /* demoSideBar.m */,
 			);
 			path = DemoProj;
 			sourceTree = "<group>";
@@ -199,8 +215,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EF6C2C1B3453ED0014D40E /* DemoTableSideBar.xib in Resources */,
 				A3EF6C111B3453A90014D40E /* Main.storyboard in Resources */,
 				A3EF6C161B3453A90014D40E /* LaunchScreen.xib in Resources */,
+				A37ED02D1B3533CF0010092F /* DemoTableViewCell.xib in Resources */,
 				A3EF6C131B3453A90014D40E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +239,9 @@
 			files = (
 				A3EF6C0E1B3453A90014D40E /* ViewController.m in Sources */,
 				A3EF6C0B1B3453A90014D40E /* AppDelegate.m in Sources */,
+				A37ED0301B3534430010092F /* DemoTableViewCell.m in Sources */,
 				A3EF6C081B3453A90014D40E /* main.m in Sources */,
+				A3EF6C2F1B3454620014D40E /* demoSideBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +436,7 @@
 				A3EF6C271B3453A90014D40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3EF6C281B3453A90014D40E /* Build configuration list for PBXNativeTarget "DemoProjTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				A3EF6C2A1B3453A90014D40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
