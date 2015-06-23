@@ -16,8 +16,6 @@
 		A3EF6C131B3453A90014D40E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EF6C121B3453A90014D40E /* Images.xcassets */; };
 		A3EF6C161B3453A90014D40E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EF6C141B3453A90014D40E /* LaunchScreen.xib */; };
 		A3EF6C221B3453A90014D40E /* DemoProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF6C211B3453A90014D40E /* DemoProjTests.m */; };
-		A3EF6C2C1B3453ED0014D40E /* DemoTableSideBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EF6C2B1B3453ED0014D40E /* DemoTableSideBar.xib */; };
-		A3EF6C2F1B3454620014D40E /* demoSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF6C2E1B3454620014D40E /* demoSideBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +45,6 @@
 		A3EF6C1B1B3453A90014D40E /* DemoProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EF6C201B3453A90014D40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3EF6C211B3453A90014D40E /* DemoProjTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoProjTests.m; sourceTree = "<group>"; };
-		A3EF6C2B1B3453ED0014D40E /* DemoTableSideBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTableSideBar.xib; sourceTree = "<group>"; };
-		A3EF6C2D1B3454620014D40E /* demoSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoSideBar.h; sourceTree = "<group>"; };
-		A3EF6C2E1B3454620014D40E /* demoSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demoSideBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +97,6 @@
 				A3EF6C121B3453A90014D40E /* Images.xcassets */,
 				A3EF6C141B3453A90014D40E /* LaunchScreen.xib */,
 				A3EF6C051B3453A90014D40E /* Supporting Files */,
-				A3EF6C2B1B3453ED0014D40E /* DemoTableSideBar.xib */,
-				A3EF6C2D1B3454620014D40E /* demoSideBar.h */,
-				A3EF6C2E1B3454620014D40E /* demoSideBar.m */,
 			);
 			path = DemoProj;
 			sourceTree = "<group>";
@@ -215,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3EF6C2C1B3453ED0014D40E /* DemoTableSideBar.xib in Resources */,
 				A3EF6C111B3453A90014D40E /* Main.storyboard in Resources */,
 				A3EF6C161B3453A90014D40E /* LaunchScreen.xib in Resources */,
 				A37ED02D1B3533CF0010092F /* DemoTableViewCell.xib in Resources */,
@@ -241,7 +232,6 @@
 				A3EF6C0B1B3453A90014D40E /* AppDelegate.m in Sources */,
 				A37ED0301B3534430010092F /* DemoTableViewCell.m in Sources */,
 				A3EF6C081B3453A90014D40E /* main.m in Sources */,
-				A3EF6C2F1B3454620014D40E /* demoSideBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

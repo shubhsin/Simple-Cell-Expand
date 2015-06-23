@@ -12,6 +12,7 @@
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 {
     NSIndexPath *selectedCellIndexPath;
+    NSIndexPath *previousSelectedIndexPath;
 }
 @end
 
@@ -41,23 +42,34 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSIndexPath *previousSelectedIndexPath = selectedCellIndexPath;  // <- save previously selected cell
+    previousSelectedIndexPath = selectedCellIndexPath;  // <- save previously selected cell
     selectedCellIndexPath = indexPath;
-    if (previousSelectedIndexPath) { // <- reload previously selected cell (if not nil)
+    if (previousSelectedIndexPath && !([previousSelectedIndexPath compare:selectedCellIndexPath] == NSOrderedSame)) { // <- reload previously selected cell (if not nil)
         [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:previousSelectedIndexPath]
+                         withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+    else if ((previousSelectedIndexPath)&&[previousSelectedIndexPath compare:selectedCellIndexPath] == NSOrderedSame){
+        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:selectedCellIndexPath]
                          withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:selectedCellIndexPath]
                      withRowAnimation:UITableViewRowAnimationAutomatic];
-    
+    NSLog(@"Selected index is%@",selectedCellIndexPath);
+    NSLog(@"Previous index is%@",previousSelectedIndexPath);
+
     
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(selectedCellIndexPath != nil
+
+    if (([selectedCellIndexPath compare:indexPath] == NSOrderedSame)&& ([selectedCellIndexPath compare:previousSelectedIndexPath]==NSOrderedSame)) {
+        return 40;
+    }
+    else if(selectedCellIndexPath != nil
        && [selectedCellIndexPath compare:indexPath] == NSOrderedSame)
         return 100;
     
+    else
     return 40;
 }
 
